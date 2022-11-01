@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.primero {z-index: 1;}
+
+.segundo {z-index: 2;}   
+
+.tercero {z-index: 3;}
+
+body {
+    
+        background-color: rgb(39, 38, 38);
+
+}
+
+::-webkit-scrollbar {
+
+    display:none;
+
+}
+
+nav {
+
+    border-bottom: 2px solid #8A80FF;
+    background-color: rgb(255, 255, 255);
+
+
+    
+    a {
+
+        color: #313030;
+    font-size: 1.3rem;
+    text-decoration: none;
+
+    
+
+
+    
+   
+
+} 
+
+.efecto:hover{
+
+    color: #8A80FF;
+
+}
+
+.efecto::after {
+    color: #8A80FF;
+    display: block;
+    content: '';
+    border-bottom: solid 1px #181818;
+    padding-bottom: 1%;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+    
+  }
+
+  .efecto:hover::after {
+    
+    transform: scaleX(1);
+  
+  }
+
+
+
+
+
+
+
+ 
+img:hover{
+        
+    filter: brightness(30%);
+
+}
+
+
+}
+
+
+
+
+
+
+
+header {
+  height: 100vh;
+  width: 100%; 
+
+
+
+    video {
+
+        filter: brightness(50%);
+        object-fit: cover;
+
+    }
+
+    img{
+        filter:brightness(120%) ;
+        
+    }
+
+}
+
+
+
+section {
+    
+    height: 100vh;
+    text-align: center;
+    
+
+
+    .nosotros {
+        width: 50%;
+        font-size: 1.5rem;
+        color: #8272d3;
+    }
+
+    .persona {
+        height: 70%;
+        right: 55%;
+        top: 15%;
+        filter: brightness(60%);
+    }
+
+   
+
+
+
+}
+
+#carta {
+
+    padding: 3rem;
+
+
+
+}
+
+
+
+#Galeria {
+
+    background: url("../IMG/Galeria/Banner.jpg")  no-repeat;
+    background-position: top;
+    background-size: 100%;
+
+
+}
+
+
+
+#nosotros {
+
+background: url("../IMG/Nosotros/sk8.jpeg");
+background-size:cover;
+background-attachment: fixed;
+
+}

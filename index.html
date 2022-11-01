@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/Estilo.css">
+
+    
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Letra Header -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./IMG/ALASKA Icono.png">
+    <title>Alaska Store</title>
+</head>
+
+<body>
+
+    <nav  class="navbar sticky-top">
+        <div class="container-fluid  d-flex flex-row justify-content-between ps-5 ">
+
+          <a class="navbar-brand efecto" href="file:///C:/Users/Fede/Desktop/Pagina%20de%20Proyecto%20Java%20Script/index.html"><img src="./IMG/Nav/ALASKA Logo Nav.png" width="100px" class="" alt=""></a>
+
+          <div class="d-flex flex-row justify-content-evenly  w-50 align-items-center">
+          <a class=" efecto" aria-current="page" href="#Header">Inicio</a>
+          <a class=" efecto" href="#Galeria"> Tienda </a>
+         
+          <a class=" efecto" href="#Nosotros"> Nosotros</a>
+          
+        </div>
+          
+        </div>
+
+      </nav> 
+
+
+
+    <header id="Header" class="section  position-relative bg-black d-flex flex-row justify-content-center   align-items-center">
+         
+                <!-- Video de Fondo -->
+            <video class="position-absolute   h-100 w-100 primero"  autoplay loop muted>
+                <source   src="./IMG/Header/Video-Fondo.mp4">
+            </video> 
+
+            <img src="./IMG/Header/zyro-image.png" height="250px" class="tercero logo mt-5" alt="">
+            
+            <!-- Capa de fondo -->
+            <div class="position-absolute bg-dark opacity-75 h-100 w-100 segundo"></div>
+
+    </header>
+
+
+
+    
+
+    </section>
+  
+        <!-- <div class="position-absolute bg-dark opacity-75 h-100 w-100 segundo"></div> -->
+  
+    
+    
+
+
+    <section  class=" bg-light">
+
+      
+
+
+
+
+    </section>
+
+    <section id="Galeria" class="bg-light" >
+
+      <img src="" alt="">
+      
+      <img src="" alt="">
+
+      <img src="" alt="">
+
+      <img src="" alt="">
+
+      <img src="" alt="">
+
+      <img src="" alt="">
+    </section>
+
+
+
+    <section id="Nosotros" class="bg-light d-flex flex-row justify-content-evenly align-items-center pt-5 bg-light">
+
+      
+
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="6000">
+            <img src="./IMG/Galeria/buzo.jpg" class="d-block" width="500px" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="6000">
+            <img src="./IMG/Galeria/zapatilla-de-skate.jpg" class="d-block w-100" width="500px" alt="...">
+          </div>
+        </div>
+        
+       
+      </div>
+   
+      <div  class="h-50 w-50 p-3 animacion">
+        <h2 >Quienes somos</h2>
+
+      <p>
+          Alaska es una compañia de Argentina que en el 2022 fue creada por
+          Javier Rivarola (1993) y Federico Massolo (1999) dedicada a sudaderas,
+          su principal mercado está en el skateboarding, de alto rendimiento y
+          una reconocida marca de deportes de acción. Además de otros deportes
+          urbanos y también extremos.
+      </p>
+      </div>
+
+    </section>
+
+    <!-- <section id="nosotros" class="bg-dark w-100 position-relative d-flex justify-content-center align-items-center ">
+
+        
+      <div class="position-absolute bg-dark opacity-75 h-100 w-100 perimero"></div>
+    
+
+      <div class="tercero animacion nosotros ">
+      <h2 >Quienes somos</h2>
+
+      <p class=" tercero text-light">
+          Alaska es una compañia de Argentina que en el 2022 fue creada por
+          Javier Rivarola (1993) y Federico Massolo (1999) dedicada a sudaderas,
+          su principal mercado está en el skateboarding, de alto rendimiento y
+          una reconocida marca de deportes de acción. Además de otros deportes
+          urbanos y también extremos.
+      </p>
+      </div>
+
+      </section> -->
+    
+      
+
+    
+
+
+    </main>
+    
+  <footer class=" w-100 bg-dark text-light text-center">
+
+      No somos dueños del material utilizado, pagina realizada sin fines de lucro creditos a quien corresponda. 31/10/22
+
+
+   </footer>
+    
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+}); </script>
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+
+ScrollReveal().reveal('.animacion', { delay: 500 });
+
+</script>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
