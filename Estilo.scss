@@ -2,86 +2,59 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     
+
 }
 
-.primero {z-index: 1;}
+@import url("./_Formulario.scss");
 
-.segundo {z-index: 2;}   
+.primero {
+    z-index: 1;
+}
 
-.tercero {z-index: 3;}
+.segundo {
+    z-index: 2;
+}
+
+.tercero {
+    z-index: 3;
+}
 
 body {
-    
-        background-color: rgb(39, 38, 38);
+    background-color: rgb(39, 38, 38);
 
 }
 
 ::-webkit-scrollbar {
-
-    display:none;
-
+    display: none;
 }
 
 nav {
-
     border-bottom: 2px solid #8A80FF;
     background-color: rgb(255, 255, 255);
-
-
-    
     a {
-
         color: #313030;
-    font-size: 1.3rem;
-    text-decoration: none;
-
-    
-
-
-    
-   
-
-} 
-
-.efecto:hover{
-
-    color: #8A80FF;
-
-}
-
-.efecto::after {
-    color: #8A80FF;
-    display: block;
-    content: '';
-    border-bottom: solid 1px #181818;
-    padding-bottom: 1%;
-    transform: scaleX(0);
-    transition: transform 300ms ease-in-out;
-    
-  }
-
-  .efecto:hover::after {
-    
-    transform: scaleX(1);
-  
-  }
-
-
-
-
-
-
-
- 
-img:hover{
-        
-    filter: brightness(30%);
-
-}
-
-
+        font-size: 1.3rem;
+        text-decoration: none;
+    }
+    .efecto:hover {
+        color: #8A80FF;
+    }
+    .efecto::after {
+        color: #8A80FF;
+        display: block;
+        content: '';
+        border-bottom: solid 1px #181818;
+        padding-bottom: 1%;
+        transform: scaleX(0);
+        transition: transform 300ms ease-in-out;
+    }
+    .efecto:hover::after {
+        transform: scaleX(1);
+    }
+    img:hover {
+        filter: brightness(30%);
+    }
 }
 
 
@@ -91,78 +64,158 @@ img:hover{
 
 
 header {
-  height: 100vh;
-  width: 100%; 
-
-
-
+    height: 100vh;
+    width: 100%;
     video {
-
         filter: brightness(50%);
         object-fit: cover;
-
     }
-
-    img{
-        filter:brightness(120%) ;
-        
+    img {
+        filter: brightness(120%);
     }
-
 }
 
 
 
 section {
-    
     height: 100vh;
     text-align: center;
-    
-
-
     .nosotros {
         width: 50%;
         font-size: 1.5rem;
         color: #8272d3;
     }
-
-    .persona {
-        height: 70%;
-        right: 55%;
-        top: 15%;
-        filter: brightness(60%);
-    }
-
    
-
-
-
-}
-
-#carta {
-
-    padding: 3rem;
-
-
-
 }
 
 
 
 #Galeria {
-
-    background: url("../IMG/Galeria/Banner.jpg")  no-repeat;
-    background-position: top;
+     background: url("../IMG/Galeria/Banner.jpg") no-repeat;
+     background-position: top;
     background-size: 100%;
 
 
-}
+    article {
+        
+        height: 45vh;
 
+        .box {
+            filter: brightness(90%);
+            object-fit: cover;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            transition: border-radius 0.23s;
+            margin: 0 auto;
+          }
+          
+          .box:hover {
+            border-radius: 2px;
+            cursor: pointer;
+
+          }
+        
+
+        .dos {
+
+            margin-top: 3rem;
+    
+        }
+
+    }
+        
+
+
+    
+}
 
 
 #nosotros {
+    background: url("../IMG/Nosotros/sk8.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
 
-background: url("../IMG/Nosotros/sk8.jpeg");
-background-size:cover;
-background-attachment: fixed;
+
+#Galeria-videos {
+
+    article {
+        
+
+         font-family: 'Anton', sans-serif;
+        
+        width: 100%;
+
+      
+    }
+    
+    .diseño2{
+        font-size:  7.5rem;
+        color:#8272d3;
+        height: 27vh;
+            .diseño {
+
+                background: rgb(52,58,64);
+        background: linear-gradient(90deg, rgba(52,58,64,1) 90%, rgba(130,114,211,1) 90% , rgba(130,114,211,1) 100%, rgba(52,58,64,1) 100%);
+
+
+            }
+
+
+            }
+
+
+       .diseño1 {
+        height: 33vh;
+        font-size:  6rem;
+        background: rgb(138,128,240);
+        background: linear-gradient(0deg, rgba(138,128,240,1) 15%, rgba(52,58,64,1) 15%);
+
+       } 
+
+    .diseño3 {
+        font-size: 6rem;
+        background: rgb(138,128,240);
+         background: linear-gradient(0deg, rgba(138,128,240,1) 50%, rgba(52,58,64,1) 50%, rgba(138,128,240,1) 45%, rgba(52,58,64,1) 45%);
+        height: 36vh;
+
+    }
+
 
 }
+
+
+
+
+footer {
+    width: 100%;
+    padding: 10rem;
+    text-align: center;
+    background-color: #100f0f;
+    color: #8a80ff;
+ 
+  
+    a{
+    text-decoration: none;
+    color: #8a80ff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+    
+    :hover{
+
+        color: white;
+
+
+    }
+}
+
+    
+  }
+
+
+  
+
+
+  
